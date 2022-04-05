@@ -1,0 +1,29 @@
+.btn{
+    color: red
+}
+
+.cont{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.cont > *{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly
+}
+
+@media (min-width:750px) {
+    .cont{
+        width: 60%;
+
+        justify-content: space-around;
+    }
+  }
