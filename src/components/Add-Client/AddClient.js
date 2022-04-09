@@ -2,7 +2,7 @@ import React, {useContext, useState, useEffect} from 'react'
 import {Form, Button} from 'react-bootstrap'
 import { useNavigate, useParams } from 'react-router-dom';
 import '/Users/jonathanaldas/Documents/CODE/react-practice/transactions-io2/transactions-io-2/src/components/Add-Client/AddClient.css'
-import {Client} from '/Users/jonathanaldas/Documents/CODE/react-practice/transactions-io2/transactions-io-2/src/context/DataContext.js'
+import {Client} from '../../context/DataContext'
 import { v4 } from 'uuid';
 
 export default function AddClient() {
@@ -99,6 +99,7 @@ export default function AddClient() {
 
     // useEffect
     useEffect(() => {
+        // eslint-disable-next-line eqeqeq
         const taskFound = state.find((client) => client.id == id)
 
         if(taskFound){

@@ -1,9 +1,7 @@
-import React, {useState, useContext}from 'react'
+import React from 'react'
 import {Container, Navbar, Nav, NavItem, Button} from 'react-bootstrap'
-import ProgressBar from 'react-bootstrap/ProgressBar'
+// import ProgressBar from 'react-bootstrap/ProgressBar'
 import '/Users/jonathanaldas/Documents/CODE/react-practice/transactions-io2/transactions-io-2/src/components/Nav/Nav.css'
-import {Client} from '/Users/jonathanaldas/Documents/CODE/react-practice/transactions-io2/transactions-io-2/src/context/DataContext.js'
-import Home from '/Users/jonathanaldas/Documents/CODE/react-practice/transactions-io2/transactions-io-2/src/components/Home/Home.js'
 import {
   Link,
 } from "react-router-dom";

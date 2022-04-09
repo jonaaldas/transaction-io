@@ -1,14 +1,17 @@
 import React, {useContext} from 'react'
 import {Container, Row, Col} from 'react-bootstrap'
 import '/Users/jonathanaldas/Documents/CODE/react-practice/transactions-io2/transactions-io-2/src/components/EachClient/EachClient.css'
-import {Client} from '/Users/jonathanaldas/Documents/CODE/react-practice/transactions-io2/transactions-io-2/src/context/DataContext.js'
+import {Client} from '../../context/DataContext'
 import {  useParams } from 'react-router-dom';
 
 export default function EachClient() {
 
     const {state, handleChecked1} = useContext(Client)
     const clientID = useParams();
-    const eachClient = state.filter((client) => client.id == clientID.id)
+    const eachClient = state.filter(function (client) {
+            // eslint-disable-next-line eqeqeq
+            return client.id == clientID.id;
+        })
     console.log(eachClient[0])
 
     function whichQuestions(){
