@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
 import {Container, Row, Col, Button} from 'react-bootstrap'
-import {Client, totalSold} from '/Users/jonathanaldas/Documents/CODE/react-practice/transactions-io2/transactions-io-2/src/context/DataContext.js'
+import {Client} from '../../context/DataContext'
 import './Home.css'
 import {
     Link,
