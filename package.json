@@ -12,7 +12,7 @@
     "uuid": "^8.3.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "webpack --progress -p --config webpack.config.js --watch",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
