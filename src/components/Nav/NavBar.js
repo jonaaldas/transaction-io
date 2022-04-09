@@ -1,7 +1,7 @@
 import React from 'react'
 import {Container, Navbar, Nav, NavItem, Button} from 'react-bootstrap'
 // import ProgressBar from 'react-bootstrap/ProgressBar'
-import '/Users/jonathanaldas/Documents/CODE/react-practice/transactions-io2/transactions-io-2/src/components/Nav/Nav.css'
+import '../../components/Nav/Nav.css'
 import {
   Link,
 } from "react-router-dom";

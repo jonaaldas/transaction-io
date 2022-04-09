@@ -1,7 +1,7 @@
 import React, {useContext, useState, useEffect} from 'react'
 import {Form, Button} from 'react-bootstrap'
 import { useNavigate, useParams } from 'react-router-dom';
-import '/Users/jonathanaldas/Documents/CODE/react-practice/transactions-io2/transactions-io-2/src/components/Add-Client/AddClient.css'
+import '../../components/Add-Client/AddClient.css'
 import {Client} from '../../context/DataContext'
 import { v4 } from 'uuid';
 

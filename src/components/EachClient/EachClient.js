@@ -1,6 +1,5 @@
 import React, {useContext} from 'react'
 import {Container, Row, Col} from 'react-bootstrap'
-// import '/Users/jonathanaldas/Documents/CODE/react-practice/transactions-io2/transactions-io-2/src/components/EachClient/EachClient.css'
 import '../../components/EachClient/EachClient.css'
 import {Client} from '../../context/DataContext'
 import {  useParams } from 'react-router-dom';
