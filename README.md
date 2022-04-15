@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Transaction Management App
 
-!!!This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Live Demo](https://ornate-kulfi-cf002a.netlify.app/)
+[YouTube](https://www.youtube.com/watch?v=MYLQmAo_Nb4)
+## Overview
 
-## Available Scripts
+Transaction Management is a CRUD app built to help real estate agents view their houses under contract from a birds-ey view.  Being a realtor myself, I notice that once we pass a certain number of homes under contract, we lose focus and track. 
+This app helps realtors see where they are in every transaction and what steps follow next. 
 
-In the project directory, you can run:
+## Images
 
-### `npm start`
+![First look at the page ](https://i.imgur.com/QV1l4Cj.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![enter image description here](https://i.imgur.com/3n5hv7d.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![enter image description here](https://i.imgur.com/N6gBDTj.png)
 
-### `npm test`
+![enter image description here](https://i.imgur.com/K2qxwMy.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![enter image description here](https://i.imgur.com/ylpfkzG.png)
 
-### `npm run build`
+# Process
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I first started off by creating all of the components. In total, we have 4 components. I installed React Bootstrap to design a very simple UI/UX layout. I went with a clean minimal layout to emphasize the functionality of the app. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I used the context API to keep track of the state of all the components. Inside the datatContext.js file, we have the function that is shared between every single component. 
+I also created a reducer that will allow me to keep track of the old state and give me a new state.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In the Hero section of the app, you can add a new transaction and you can choose between a seller or a buyer. Each option has a set of different steps. When the user hits add transaction I check what option the user picked if it's a seller I only display seller data onto the screen vice versa with the buyer. 
 
-### `npm run eject`
+The user can edit each transaction and change between a seller and buyer, we also have the option to delete a transaction. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Built With 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ -  React
+-   Styled Components
+-   React Router v6
+-   Context API
+-   Hooks:
+    -   useState
+    -   useEffect
+    -   useContext
+    -   useReducer
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## What I learned 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-   How to implement the Context API
+-   How to use React Router v6
+-   How to use reducer instead of useState
 
-## Learn More
+### Continued Development
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+I would like to learn about authentication and add a user login. I would also like to learn about backend development or Supabase so that a user's transactions can be saved in a database. I will also like to add additional functionality to each eachClient component. I would like to add a comment section and the ability to add files. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Made By
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   Personal Portfolio:  [Jonaathanaldas.com ](https://jonathanaldas.com/)
